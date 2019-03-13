@@ -1,0 +1,20 @@
+button {
+  width: auto;
+  margin: 0 4px;
+  border-radius: 3px;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+.active-btn {
+  background: tomato;
+}
+
+button:hover {
+  background: tomato;
+}
+
+.App {
+  text-align: left;
+  background: lightblue;
+}
