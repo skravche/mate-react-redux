@@ -1,14 +1,14 @@
 {
-  "main.css": "/mate-react-redux/005-web-react/static/css/main.c363957a.chunk.css",
-  "main.js": "/mate-react-redux/005-web-react/static/js/main.f874ab66.chunk.js",
-  "main.js.map": "/mate-react-redux/005-web-react/static/js/main.f874ab66.chunk.js.map",
-  "runtime~main.js": "/mate-react-redux/005-web-react/static/js/runtime~main.304b3d4b.js",
-  "runtime~main.js.map": "/mate-react-redux/005-web-react/static/js/runtime~main.304b3d4b.js.map",
-  "static/js/2.b934461c.chunk.js": "/mate-react-redux/005-web-react/static/js/2.b934461c.chunk.js",
-  "static/js/2.b934461c.chunk.js.map": "/mate-react-redux/005-web-react/static/js/2.b934461c.chunk.js.map",
-  "index.html": "/mate-react-redux/005-web-react/index.html",
-  "precache-manifest.3ffbaf62517622b766c0da4209ea6e76.js": "/mate-react-redux/005-web-react/precache-manifest.3ffbaf62517622b766c0da4209ea6e76.js",
-  "service-worker.js": "/mate-react-redux/005-web-react/service-worker.js",
-  "static/css/main.c363957a.chunk.css.map": "/mate-react-redux/005-web-react/static/css/main.c363957a.chunk.css.map",
-  "static/media/logo.svg": "/mate-react-redux/005-web-react/static/media/logo.5d5d9eef.svg"
+  "main.css": "/mate-react-redux/static/css/main.c363957a.chunk.css",
+  "main.js": "/mate-react-redux/static/js/main.dc32ea6a.chunk.js",
+  "main.js.map": "/mate-react-redux/static/js/main.dc32ea6a.chunk.js.map",
+  "runtime~main.js": "/mate-react-redux/static/js/runtime~main.307b8b03.js",
+  "runtime~main.js.map": "/mate-react-redux/static/js/runtime~main.307b8b03.js.map",
+  "static/js/2.b934461c.chunk.js": "/mate-react-redux/static/js/2.b934461c.chunk.js",
+  "static/js/2.b934461c.chunk.js.map": "/mate-react-redux/static/js/2.b934461c.chunk.js.map",
+  "index.html": "/mate-react-redux/index.html",
+  "precache-manifest.1d544dd8f407e377bc2f8d1738086383.js": "/mate-react-redux/precache-manifest.1d544dd8f407e377bc2f8d1738086383.js",
+  "service-worker.js": "/mate-react-redux/service-worker.js",
+  "static/css/main.c363957a.chunk.css.map": "/mate-react-redux/static/css/main.c363957a.chunk.css.map",
+  "static/media/logo.svg": "/mate-react-redux/static/media/logo.5d5d9eef.svg"
 }
