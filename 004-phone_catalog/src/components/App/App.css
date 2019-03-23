@@ -1,0 +1,16 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  line-height: 1.49;
+  color: #333;
+  padding: 20px;
+  background: ffe;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.main {
+  padding: 0 15px;
+}
