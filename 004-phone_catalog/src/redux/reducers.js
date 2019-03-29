@@ -2,7 +2,15 @@ import {
   GET_PHONE_LIST_REQUEST,
   GET_PHONE_LIST_SUCCESS,
   GET_PHONE_LIST_FAILURE,
-} from './actions';
+} from './../redux/action-type';
+
+import {
+  ADD_TO_CART,
+  REMOVE_ITEM,
+  SUB_QUANTITY,
+  ADD_QUANTITY,
+  ADD_SHIPPING,
+} from './../redux/action-type';
 
 const initialState = {
   listLoading: false,
@@ -27,6 +35,14 @@ export default function(state = initialState, action) {
         ...state,
         listLoading: false,
       };
+
+    //new
+    case ADD_TO_CART:
+      return {
+        ...state,
+        listLoading: true,
+      };
+
     default:
       return state;
   }

@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import ProductList from '../ProductListView';
 import Product from '../ProductView';
+import Navbar from './../Navbar/Navbar';
+//import Cart from './../Cart/Cart';
+
 import '../App/App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="main">
-        <Route path="/" component={ProductList} exact />
-        <Route path="/:product" component={Product} exact />
-      </div>
+      <BrowserRouter>
+        <div className="main">
+          <Navbar />
+          <Switch>
+            <Route path="/" component={ProductList} exact />
+            <Route path="/:product" component={Product} exact />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
 }

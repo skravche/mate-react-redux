@@ -1,9 +1,25 @@
 import axios from 'axios';
+import {
+  GET_PHONE_LIST_REQUEST,
+  GET_PHONE_LIST_SUCCESS,
+  GET_PHONE_LIST_FAILURE,
+} from './../redux/action-type';
 
-export const GET_PHONE_LIST_REQUEST = 'GET_PHONE_LIST_REQUEST ';
-export const GET_PHONE_LIST_SUCCESS = 'GET_PHONE_LIST_SUCCESS';
-export const GET_PHONE_LIST_FAILURE = 'GET_PHONE_LIST_FAILURE';
+import {
+  ADD_TO_CART,
+  REMOVE_ITEM,
+  SUB_QUANTITY,
+  ADD_QUANTITY,
+  ADD_SHIPPING,
+} from './../redux/action-type';
+export const addToCart = id => {
+  return {
+    type: ADD_TO_CART,
+    id,
+  };
+};
 
+//last
 export function getPhoneList() {
   return dispatch => {
     dispatch({ type: GET_PHONE_LIST_REQUEST });

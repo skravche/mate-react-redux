@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './ProductItem.css';
 import { Link } from 'react-router-dom';
+import { addToCart } from './../../redux/actions';
 
 class ProductItem extends Component {
+  handleClick = id => {
+    this.props.addToCart(id);
+  };
+
   render() {
     const { imageUrl, name, snippet, id } = this.props;
     console.log(id);
@@ -20,10 +26,34 @@ class ProductItem extends Component {
             <p>{name} </p>
           </Link>
           <p className="description">{snippet}</p>
+          <span
+            to="/"
+            onClick={() => {
+              this.handleClick(id);
+            }}
+          >
+            <button className="button">Add to cart</button>
+          </span>
         </div>
       </li>
     );
   }
 }
 
-export default ProductItem;
+const mapStateToProps = state => {
+  return {
+    items: state.items,
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    addToCart: id => {
+      dispatch(addToCart(id));
+    },
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProductItem);
