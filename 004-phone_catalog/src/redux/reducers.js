@@ -40,7 +40,10 @@ export default function(state = initialState, action) {
     case ADD_TO_CART:
       return {
         ...state,
-        listLoading: true,
+        cart: {
+          ...state.cart,
+          [{id: '', }]
+        }
       };
 
     default:
